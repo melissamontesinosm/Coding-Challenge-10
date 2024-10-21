@@ -22,6 +22,15 @@ document.addEventListener('DOMContentLoaded', () => { //Reference to the size se
             purchasebutton.disabled = true;
         }
 
+    // Task 4: Create a Checkout Event
+    purchasebutton.addEventListener('Click', () => {
+        if(!purchasebutton.disabled) { //If clicked and botton is not disabled,
+            alert('Purchase was Successful'); // Then, display message
+        } else {
+            alert('Product is out of stock'); // If not, display this other message
+        }
+     });
+
     });
 });
 
